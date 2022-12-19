@@ -1,5 +1,6 @@
 import { getQueue } from './queue';
 
-test('something', () => {
-    expect(1).toBe(2);
+test('should start empty', () => {
+    const queue = getQueue()
+    expect(queue.isEmpty()).toBe(true);
 });
