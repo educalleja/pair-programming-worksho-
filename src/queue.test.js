@@ -31,4 +31,7 @@ test('#printQueue', () => {
     queue.add(1)
     queue.add(2)
     expect(queue.printQueue()).toStrictEqual([1,2]);
+    queue.get();
+    queue.get();
+    expect(queue.printQueue()).toStrictEqual([]);
 });
