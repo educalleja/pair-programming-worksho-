@@ -1,8 +1,9 @@
 export function getQueue() {
+    const queue = [];
+
     return {
         isEmpty() {
-            // Returns true when the queue is empty
-            // Returns false otherwise
+            return queue.length === 0;
         },
         get() {
             // Returns the first element of the queue
