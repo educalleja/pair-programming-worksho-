@@ -11,7 +11,7 @@ export function getQueue() {
             // Adds an element into the queue
             // Returns undefined
         },
-        allElements() {
+        printQueue() {
             // Returns an array of all elements in the queue
         }
     }
