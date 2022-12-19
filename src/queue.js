@@ -6,14 +6,13 @@ export function getQueue() {
             return queue.length === 0;
         },
         get() {
-            // Returns the first element of the queue
+            return queue.shift();
         },
         add(element) {
-            // Adds an element into the queue
-            // Returns undefined
+            queue.push(element);
         },
         printQueue() {
-            // Returns an array of all elements in the queue
+            return [...queue];
         }
     }
 }

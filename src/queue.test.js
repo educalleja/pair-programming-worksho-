@@ -30,5 +30,5 @@ test('#printQueue', () => {
     const queue = getQueue()
     queue.add(1)
     queue.add(2)
-    expect(queue.printQueue()).toBe([1,2]);
+    expect(queue.printQueue()).toStrictEqual([1,2]);
 });
